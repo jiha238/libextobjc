@@ -103,6 +103,7 @@
 		DD5B11471D4B7074009FD1B9 /* NSInvocation+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = D005F04015950509007A8A1C /* NSInvocation+EXT.m */; };
 		DD5B11481D4B7074009FD1B9 /* NSMethodSignature+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = D005F04215950509007A8A1C /* NSMethodSignature+EXT.m */; };
 		DD9312201ED5D6F200DA9A8D /* EXTTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = DD93121F1ED5D6F100DA9A8D /* EXTTuple.h */; };
+		DD9312211ED5DD6700DA9A8D /* EXTTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = DD93121F1ED5D6F100DA9A8D /* EXTTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -508,6 +509,7 @@
 				DD5B113F1D4B7061009FD1B9 /* metamacros.h in Headers */,
 				DD5B11361D4B7061009FD1B9 /* EXTNil.h in Headers */,
 				DD5B11381D4B7061009FD1B9 /* EXTSafeCategory.h in Headers */,
+				DD9312211ED5DD6700DA9A8D /* EXTTuple.h in Headers */,
 				DD5B11391D4B7061009FD1B9 /* EXTScope.h in Headers */,
 				DD5B113A1D4B7061009FD1B9 /* EXTSelectorChecking.h in Headers */,
 				DD5B113B1D4B7061009FD1B9 /* EXTSynthesize.h in Headers */,
