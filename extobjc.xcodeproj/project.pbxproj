@@ -102,6 +102,7 @@
 		DD5B11461D4B7074009FD1B9 /* EXTSelectorChecking.m in Sources */ = {isa = PBXBuildFile; fileRef = D09FB2FC159A459700A5F6A4 /* EXTSelectorChecking.m */; };
 		DD5B11471D4B7074009FD1B9 /* NSInvocation+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = D005F04015950509007A8A1C /* NSInvocation+EXT.m */; };
 		DD5B11481D4B7074009FD1B9 /* NSMethodSignature+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = D005F04215950509007A8A1C /* NSMethodSignature+EXT.m */; };
+		DD9312201ED5D6F200DA9A8D /* EXTTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = DD93121F1ED5D6F100DA9A8D /* EXTTuple.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,6 +196,7 @@
 		DD5B112A1D4B7052009FD1B9 /* libextobjc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libextobjc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5B112C1D4B7052009FD1B9 /* libextobjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libextobjc.h; sourceTree = "<group>"; };
 		DD5B112E1D4B7052009FD1B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD93121F1ED5D6F100DA9A8D /* EXTTuple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTTuple.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +287,7 @@
 		D005F0991595050D007A8A1C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				DD93121F1ED5D6F100DA9A8D /* EXTTuple.h */,
 				D005F01815950509007A8A1C /* EXTADT.h */,
 				D0EF9BFE15992F080066DFBC /* EXTADT.m */,
 				D005F01F15950509007A8A1C /* EXTConcreteProtocol.h */,
@@ -474,6 +477,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD9312201ED5D6F200DA9A8D /* EXTTuple.h in Headers */,
 				D005F04315950509007A8A1C /* EXTADT.h in Headers */,
 				D005F05115950509007A8A1C /* EXTConcreteProtocol.h in Headers */,
 				D005F05515950509007A8A1C /* EXTCoroutine.h in Headers */,
@@ -610,7 +614,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				TargetAttributes = {
 					DD5B11291D4B7052009FD1B9 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -793,6 +797,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C4F146F99B900D680C9 /* Debug.xcconfig */;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -801,7 +808,7 @@
 				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				TEST_AFTER_BUILD = YES;
@@ -813,6 +820,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C51146F99B900D680C9 /* Release.xcconfig */;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -821,7 +831,7 @@
 				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				TEST_AFTER_BUILD = YES;
 				WARNING_CFLAGS = "-fmacro-backtrace-limit=0";
@@ -954,7 +964,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1010,7 +1020,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";

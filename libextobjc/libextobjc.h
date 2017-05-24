@@ -28,5 +28,6 @@ FOUNDATION_EXPORT const unsigned char libextobjcVersionString[];
 #import <libextobjc/EXTScope.h>
 #import <libextobjc/EXTSelectorChecking.h>
 #import <libextobjc/EXTSynthesize.h>
+#import <libextobjc/EXTTuple.h>
 #import <libextobjc/NSInvocation+EXT.h>
 #import <libextobjc/NSMethodSignature+EXT.h>
