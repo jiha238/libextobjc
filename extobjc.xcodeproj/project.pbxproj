@@ -102,6 +102,8 @@
 		DD5B11461D4B7074009FD1B9 /* EXTSelectorChecking.m in Sources */ = {isa = PBXBuildFile; fileRef = D09FB2FC159A459700A5F6A4 /* EXTSelectorChecking.m */; };
 		DD5B11471D4B7074009FD1B9 /* NSInvocation+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = D005F04015950509007A8A1C /* NSInvocation+EXT.m */; };
 		DD5B11481D4B7074009FD1B9 /* NSMethodSignature+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = D005F04215950509007A8A1C /* NSMethodSignature+EXT.m */; };
+		DD5C2D291EEAEADB00B5D92E /* EXTClassGenerationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5C2D281EEAEADB00B5D92E /* EXTClassGenerationTest.m */; };
+		DD5C2D2A1EEAEADB00B5D92E /* EXTClassGenerationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5C2D281EEAEADB00B5D92E /* EXTClassGenerationTest.m */; };
 		DD9312201ED5D6F200DA9A8D /* EXTTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = DD93121F1ED5D6F100DA9A8D /* EXTTuple.h */; };
 		DD9312211ED5DD6700DA9A8D /* EXTTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = DD93121F1ED5D6F100DA9A8D /* EXTTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -197,6 +199,7 @@
 		DD5B112A1D4B7052009FD1B9 /* libextobjc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libextobjc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5B112C1D4B7052009FD1B9 /* libextobjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libextobjc.h; sourceTree = "<group>"; };
 		DD5B112E1D4B7052009FD1B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD5C2D281EEAEADB00B5D92E /* EXTClassGenerationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTClassGenerationTest.m; sourceTree = "<group>"; };
 		DD93121F1ED5D6F100DA9A8D /* EXTTuple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTTuple.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -437,6 +440,7 @@
 				6FE5121317AFD14F00454E89 /* EXTRuntimeTestProtocol.h */,
 				D0CFB610128A8EEE006DC377 /* iOS-Info.plist */,
 				D0A8B2DD128A495D004AACE0 /* OSX-Info.plist */,
+				DD5C2D281EEAEADB00B5D92E /* EXTClassGenerationTest.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -616,7 +620,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				TargetAttributes = {
 					DD5B11291D4B7052009FD1B9 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -702,6 +706,7 @@
 				D0D02B7B19589F7000895448 /* EXTKeypathWeakWarningTest.m in Sources */,
 				D088C7F51591377000C70CE2 /* EXTADTTest.m in Sources */,
 				D09FB2FA159A41D100A5F6A4 /* EXTSelectorCheckingTest.m in Sources */,
+				DD5C2D291EEAEADB00B5D92E /* EXTClassGenerationTest.m in Sources */,
 				D0FBB1DB15F6897D002281B9 /* EXTSynthesizeTest.m in Sources */,
 				876EE9D6170B13C000AB73BB /* EXTObjectiveCppCompileTest.mm in Sources */,
 			);
@@ -717,6 +722,7 @@
 				D002DAF913656CDF005348A5 /* EXTNilTest.m in Sources */,
 				D0B9B0B613727EF800EC1224 /* EXTScopeTest.m in Sources */,
 				D03EC9A4138A25F100559080 /* EXTCoroutineTest.m in Sources */,
+				DD5C2D2A1EEAEADB00B5D92E /* EXTClassGenerationTest.m in Sources */,
 				D088C7BF159121A300C70CE2 /* EXTKeyPathCodingTest.m in Sources */,
 				D088C7F61591377000C70CE2 /* EXTADTTest.m in Sources */,
 				D09FB2FB159A41D100A5F6A4 /* EXTSelectorCheckingTest.m in Sources */,
@@ -800,7 +806,11 @@
 			baseConfigurationReference = D0919C4F146F99B900D680C9 /* Debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_TESTABILITY = YES;
@@ -823,7 +833,11 @@
 			baseConfigurationReference = D0919C51146F99B900D680C9 /* Release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_TESTABILITY = YES;
